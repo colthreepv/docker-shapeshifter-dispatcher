@@ -13,4 +13,4 @@ RUN cd /go/src \
 
 FROM alpine:3
 COPY --from=build /go/src/github.com/OperatorFoundation/shapeshifter-dispatcher/shapeshifter-dispatcher/shapeshifter-dispatcher /bin/shapeshifter-dispatcher
-CMD shapeshifter-dispatcher
+ENTRYPOINT shapeshifter-dispatcher
